@@ -107,9 +107,10 @@ main.style='  transition: 2s ease'
   // ... your existing game logic here ...
 
   setTimeout(() => {
-    alert(result);
+    
     isPlaying = false; // ✅ unlock after result
   }, 1000);
 });
+
 
 
