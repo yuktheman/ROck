@@ -243,6 +243,58 @@ font-size: 13px;
   white-space: normal;      /* allow wrapping */
   word-wrap: break-word;
   border-radius: 20px;    /* break long words */
+}
+/* ===== MOBILE ONLY FIXES (won't affect PC) ===== */
+@media (max-width: 600px) {
 
+  body {
+    padding: 12px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 95%;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .vs-area {
+    gap: 8px;
+  }
+
+  .player-box {
+    padding: 10px;
+  }
+
+  .player-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .player-icon img {
+    width: 60%;
+  }
+
+  .choices {
+    gap: 8px;
+  }
+
+  .choice-btn {
+    padding: 10px;
+  }
+
+  .choice-btn img {
+    width: 28px;
+  }
+
+  .result-box {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
 
 }
