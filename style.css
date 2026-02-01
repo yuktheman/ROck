@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+#playerdisplay{
+background-color: #2f7fff;
+background-image: url('fist.png');
+background-size: 30%;
+background-position: center;
+object-fit: cover;
+}
+body {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #1f2933, #0b1220);
+  color: white;
+}
+
+.game {
+  max-height: 500px;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  animation: popIn 0.6s ease;
+}
+
+.game h1 {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.players {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.player {
+  width: 40%;
+}
+
+.vs {
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.choice-display {
+  height: 90px;
+  border-radius: 14px;
+  margin-top: 8px;
+  background: rgba(119, 88, 88, 0.603);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  animation: float 2.5s ease-in-out infinite;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 12px;
+background-color: linear-gradient(circle at top, #1f2933, #0b1220)
+}
+
+.choice {
+  flex: 1;
+  height: 70px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #3b82f6, #2563eb);
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 8px 18px rgba(59, 130, 246, 0.4);
+}
+
+.choice:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+.choice:active {
+  transform: scale(0.95);
+}
+
+.result-text {
+  margin-top: 10px;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+/* Animations */
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+.choicerock{
+display: flex;
+justify-content: center;
+align-items: center;
+object-fit: cover;
+width: 90px;
+padding: 15px;
+height: 80px;
+transition: 0.5s ease;
+}
+.choicerock img{
+border-radius: 20px;
+
+}
+.choicerock:hover{
+  width: 100px;
+  height: 90px;
+  cursor: pointer;
+  background: #ffffff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px #25d366, 
+              0 0 20px #ff2121,
+              0 0 30px #25d366;
+}
+.choicePaper{
+display: flex;
+justify-content: center;
+align-items: center;
+object-fit: cover;
+width: 100px;
+padding: 20px;
+height: 80px;
+transition: 0.5s ease;
+}
+.choicePaper img{
+border-radius: 20px;
+
+}
+.choicePaper:hover{
+  width: 100px;
+  height: 90px;
+  cursor: pointer;
+  background: #ffffff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px #25d366, 
+              0 0 20px #ff2121,
+              0 0 30px #25d366;
+}
+.choiceScissors{
+display: flex;
+justify-content: center;
+align-items: center;
+object-fit: cover;
+width: 100px;
+padding: 20px;
+height: 80px;
+transition: 0.5s ease;
+}
+.choiceScissors img{
+border-radius: 20px;
+
+}
+.choiceScissors:hover{
+  width: 100px;
+  height: 90px;
+  cursor: pointer;
+  background: #ffffff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px #25d366, 
+              0 0 20px #ff2121,
+              0 0 30px #25d366;
+}
+
+#hell{
+
+
+  background-repeat: no-repeat;       /* don't tile */
+  background-size: cover;             /* make it cover entire page */
+  background-position: center;        /* center the image */
+  background-attachment: fixed; 
+  background-size: 50%;
+ transition: 2s ease-in-out;
+}
+#hell2{
+
+
+  background-repeat: no-repeat;       /* don't tile */
+  background-size: cover;             /* make it cover entire page */
+  background-position: center;        /* center the image */
+  background-attachment: fixed; 
+  background-size: 50%;
+}
+.main{
+ 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 80px;
+
+color: #000000;
+  /* show ... */
+  transition: font-size 0.3s ease, color 0.3s ease;
+font-size: 13px;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  border: none;
+
+  white-space: normal;      /* allow wrapping */
+  word-wrap: break-word;
+  border-radius: 20px;    /* break long words */
+
+
+}
