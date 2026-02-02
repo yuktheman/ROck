@@ -10,6 +10,7 @@ document.addEventListener('click' ,function(dets) {
   function playAudio() {
   x.play();
 } 
+  playAudio();
   let target = dets.target.closest('button');
   if (!target) return;
     if (isPlaying) return;
@@ -116,6 +117,7 @@ main.style='  transition: 2s ease'
     isPlaying = false; // ✅ unlock after result
   }, 1000);
 });
+
 
 
 
