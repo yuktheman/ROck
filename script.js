@@ -5,6 +5,7 @@ let isPlaying = false;
 
 
 document.addEventListener('click' ,function(dets) {
+  let main =  document.querySelector('.main')
   var x = document.getElementById("clickSound")
   function playAudio() {
   x.play();
@@ -115,6 +116,7 @@ main.style='  transition: 2s ease'
     isPlaying = false; // ✅ unlock after result
   }, 1000);
 });
+
 
 
 
