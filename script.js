@@ -10,9 +10,10 @@ document.addEventListener('click' ,function(dets) {
   function playAudio() {
   x.play();
 } 
-  playAudio();
+
   let target = dets.target.closest('button');
   if (!target) return;
+    playAudio();
     if (isPlaying) return;
   isPlaying = true;
 let result=''
@@ -96,7 +97,7 @@ main.style.color ='#bb4a4681';
 
 ; }
 },500)
-let main =  document.querySelector('.main')
+
 
 main.innerHTML=`Player ${playermove}, Computer choosed ${computermove} 
 
@@ -117,7 +118,6 @@ main.style='  transition: 2s ease'
     isPlaying = false; // ✅ unlock after result
   }, 1000);
 });
-
 
 
 
