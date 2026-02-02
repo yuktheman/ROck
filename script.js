@@ -5,6 +5,10 @@ let isPlaying = false;
 
 
 document.addEventListener('click' ,function(dets) {
+  var x = document.getElementById("clickSound")
+  function playAudio() {
+  x.play();
+} 
   let target = dets.target.closest('button');
   if (!target) return;
     if (isPlaying) return;
@@ -111,6 +115,7 @@ main.style='  transition: 2s ease'
     isPlaying = false; // ✅ unlock after result
   }, 1000);
 });
+
 
 
 
